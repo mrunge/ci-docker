@@ -18,8 +18,8 @@ jobs:
           - ubuntu23.10
           - ubuntu22.04
           - ubuntu20.04
-          - fedora39
-          - fedora38
+          - fedora45
+          - fedora44
           - centos9
 
     env:

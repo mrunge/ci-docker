@@ -1,4 +1,4 @@
-FROM fedora:39
+FROM fedora:44
 
 ADD redhat.sh /redhat.sh
 COPY /checks/*.sh /checks/
@@ -13,6 +13,7 @@ ENV EXTRA_PACKAGES="\
   intel-cmt-cat-devel \
   iproute-devel \
   iptables-devel \
+  jansson-devel \
   libatasmart-devel \
   libcap-devel \
   libcurl-devel \
@@ -47,6 +48,7 @@ ENV EXTRA_PACKAGES="\
   python3-devel \
   riemann-c-client-devel \
   rrdtool-devel \
+  sqlite-devel \
   varnish-libs-devel \
   xfsprogs-devel \
   yajl-devel \
@@ -62,6 +64,7 @@ ENV SUPPORTED_PLUGIN_LIST="\
   battery \
   bind \
   buddyinfo \
+  capabilities \
   ceph \
   cgroups \
   check_uptime \
@@ -82,6 +85,7 @@ ENV SUPPORTED_PLUGIN_LIST="\
   dns \
   dpdkevents \
   dpdkstat \
+  dpdk_telemetry \
   drbd \
   email \
   entropy \
@@ -151,6 +155,7 @@ ENV SUPPORTED_PLUGIN_LIST="\
   procevent \
   protocols \
   python \
+  ras \
   redis \
   rrdcached \
   rrdtool \
